@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div id="category_home" class="category {{page.category}}">
+    <h2>{{page.category|capitalize}} posts</h2>
+    <ul class="posts">
+        {% if site.paginate %}
+
+        {% for post in paginator.posts %}
+        {% include post_item.html %}
+        {% endfor %}
+        {% capture pager_url %}{{ site.url }}/{{ page.category }}{% endcapture %}
+        {% include pagination.html %}
+
+        {% else %}
+
+        {% for post in site.categories[page.category] %}
+        {% include post_item.html %}
+        {% endfor %}
+
+        {% endif %}
+    </ul>
+</div>

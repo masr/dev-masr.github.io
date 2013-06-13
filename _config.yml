@@ -1,0 +1,14 @@
+name: Masr's Blog
+pygments: true
+url: http://blog.masr.in
+paginate: 9 
+paginate_path: "page:num"
+permalink: none
+host: 0.0.0.0
+port: 4000
+source:  .
+destination: ./_site
+plugins:  ./_plugins
+layouts:  ./_layouts
+include:  ['.htaccess']
+keep_files:  ['.git']

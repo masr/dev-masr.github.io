@@ -1,0 +1,12 @@
+<style>
+    #tag_cloud {
+        padding-right: 1em;
+        font-size: 85%;
+    }
+</style>
+<div id='tag_cloud'>
+    <h3>Tag Could</h3>
+    {% for tag in site.tags %}
+    <a href="{{ site.url }}/tag/{{ tag[0] }}/" title="{{ tag[1].size }} posts" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+    {% endfor %}
+</div>

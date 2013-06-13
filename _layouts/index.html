@@ -1,0 +1,25 @@
+---
+layout: default
+title: Masr's Blog
+---
+
+<div id="home">
+    <h2>Posts</h2>
+    <ul class="posts">
+        {% if site.paginate %}
+
+        {% for post in paginator.posts %}
+        {% include post_item.html %}
+        {% endfor %}
+        {% assign pager_url = site.url %}
+        {% include pagination.html %}
+
+        {% else %}
+
+        {% for post in site.posts %}
+        {% include post_item.html %}
+        {% endfor %}
+
+        {% endif %}
+    </ul>
+</div>

@@ -1,0 +1,22 @@
+---
+layout: default
+type: post
+---
+<div id="post">
+
+    <h2>{{ page.title }}</h2>
+
+    <p class="meta">{{ page.date | date_to_string }}</p>
+
+    {{ content }}
+    {% if page.tags.size > 0 %}
+    <h3>Tags : </h3>
+
+    <p class="tags">
+        {% for tag in page.tags %}
+        <a href="{{ site.url }}/tag/{{ tag }}/">{{ tag }}</a>
+        {% endfor %}
+    </p>
+    {% endif %}
+    {% include disqus_comment.html %}
+</div>

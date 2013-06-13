@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div id="tag_home" class="tag {{page.tag}}">
+    <h2>{{page.tag|capitalize}} posts</h2>
+    <ul class="posts">
+        {% if site.paginate %}
+
+        {% for post in paginator.posts %}
+        {% include post_item.html %}
+        {% endfor %}
+        {% capture pager_url %}{{ site.url }}/tag/{{page.tag}}{% endcapture %}
+        {% include pagination.html %}
+
+        {% else %}
+
+        {% for post in site.tags[page.tag] %}
+        {% include post_item.html %}
+        {% endfor %}
+
+        {% endif %}
+    </ul>
+</div>
