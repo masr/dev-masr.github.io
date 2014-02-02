@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "第一篇文章"
-date:   2013-06-13 23:50:44
+date:   2013-06-13 23:00:00
 category: life
-tags: jekyll wordpress github ruby 陈浩 张乐添
+tags: jekyll markdown wordpress github ruby 陈浩 张乐添
 ---
 <p class="excerpt">
 <!--excerpt-->
@@ -14,7 +14,7 @@ tags: jekyll wordpress github ruby 陈浩 张乐添
 
 之前写博客都是用wordpress写的。感觉wordpress确实是一个很方便的软件，就连很多不会编程的人也会搞了。比如说我的小妹，而且还搞的有声有色。渐渐地，我觉得wordpress还是不怎么适合我。他为了易用性封装了很多很多的东西，就像是windows一样，逐渐成为了一个黑箱。对于喜欢什么都明明白白的程序员来讲，这并不是一个好事情。
 
-最近经陈浩推荐，用上了一个叫做jekyll的小工具，是基于ruby的。 
+最近经陈浩推荐，用上了一个叫做jekyll的小工具，是基于ruby的。
 
 其实在此之前我是听说过jekyll的，因为张乐添的博客用的是octpress搭建的。而octpress就是以jekyll为基础的。看来jekyll这个工具确实是很受极客们的推崇啊！于是我更加下定决心要尝试一次。
 

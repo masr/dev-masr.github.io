@@ -40,7 +40,7 @@ module Jekyll
       pages = CategoryPager.calculate_pages(category_posts, site.config['paginate'].to_i)
 
       (1..pages).each do |num_page|
-        pager = CategoryPager.new(site.config, num_page, category_posts, category, pages)
+        pager = CategoryPager.new(site, num_page, category_posts, category, pages)
 
         if num_page>1
           newpage = CategoryIndexPage.new(site, site.source, "#{category}/page#{num_page}", category)

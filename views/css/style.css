@@ -1,0 +1,276 @@
+body {
+  background-color: #000000;
+  font-size: 14px;
+  font-family: Convergence, tahoma, "微软雅黑", simsun, sans-serif;
+  color: #ffffff;
+}
+p {
+  margin: 14px 0;
+  text-align: left;
+}
+a {
+  color: #11cc00;
+  text-decoration: none;
+}
+a:hover {
+  color: #11cc00;
+  text-decoration: underline;
+}
+a:visited {
+  color: #11cc00;
+  text-decoration: none;
+}
+h2,
+h3,
+h4 {
+  margin: 10px 0 10px 0;
+}
+h2,
+.h2 {
+  font-size: 240%;
+}
+h3,
+.h3 {
+  font-size: 180%;
+}
+h4,
+.h4 {
+  font-size: 150%;
+}
+h5,
+.h5 {
+  font-size: 125%;
+}
+h6,
+.h6 {
+  font-size: 110%;
+}
+.h7 {
+  font-size: 100%;
+}
+.h8 {
+  font-size: 90%;
+}
+.h9 {
+  font-size: 85%;
+}
+img {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: baseline;
+}
+.fix_height:after {
+  content: ".";
+  display: block;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  visibility: hidden;
+}
+.clear_float {
+  clear: both;
+}
+/***************** Template ***************************/
+/*****************  Layout ***************************/
+#site {
+  width: 700px;
+  margin: 0 auto;
+}
+#header {
+  margin-bottom: 14px;
+}
+#header .panel1 {
+  float: left;
+  width: 200px;
+}
+#header .panel1 img {
+  width: 170px;
+}
+#header .panel2 {
+  float: left;
+  width: 500px;
+}
+#header .panel2 #menu ul {
+  padding: 50px 0 20px 0;
+  margin-bottom: 3px;
+}
+#header .panel2 #menu ul li {
+  float: left;
+  margin-right: 14px;
+}
+#header .panel2 #menu ul li a {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+#header .panel2 h1 a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 80px;
+}
+#header .panel2 .sub {
+  color: #cccccc;
+  font-size: 20px;
+}
+#content {
+  padding-left: 40px;
+}
+#footer {
+  font-size: 90%;
+  color: #cccccc;
+  border-top: 1px solid #111111;
+  padding-top: 5px;
+  margin: 28px auto;
+  overflow: hidden;
+  text-align: center;
+  width: 400px;
+}
+#footer table {
+  margin: 0 auto;
+}
+#footer td {
+  text-align: left;
+  padding-left: 14px;
+}
+#footer td a {
+  color: #cccccc;
+  text-decoration: underline;
+}
+#footer td .masr_home {
+  font-size: 110%;
+  font-weight: bolder;
+}
+/*****************************************************************************/
+/*
+/* widget
+/*
+/*****************************************************************************/
+#widgets h3 {
+  font-size: 150%;
+  margin-top: 14px;
+}
+#widgets #tag_cloud {
+  width: 300px;
+  float: left;
+}
+#widgets #tag_cloud .tags {
+  font-size: 85%;
+}
+#widgets #recent_comments {
+  width: 350px;
+  float: left;
+}
+#widgets #recent_comments .comment_list {
+  font-size: 90%;
+}
+#widgets #recent_comments .comment_list a {
+  color: #ffffff;
+}
+/********************   Post list   *******************************/
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 28px;
+}
+ul.posts li.post {
+  line-height: 25px;
+  margin: 14px 0 0 0;
+}
+ul.posts li.post a.title {
+  font-size: 125%;
+}
+ul.posts li.post p.excerpt {
+  font-size: 90%;
+  margin: 0;
+  padding-left: 28px;
+  color: #cccccc;
+}
+ul.posts li.post span.date {
+  color: #ffffff;
+  font-size: 85%;
+}
+/**************************   Single post     ***************************/
+#post .meta {
+  color: #cccccc;
+}
+#post p {
+  line-height: 1.8em;
+}
+#post ul,
+#post ol {
+  margin-left: 14px;
+  list-style: disc;
+}
+#post code {
+  padding: 0px 3px 2px 3px;
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border: 1px dotted #bbbbbb;
+  color: #dddddd;
+  font-size: 12px;
+}
+#post .highlight {
+  background-color: #333333;
+  padding: 10px;
+  overflow: auto;
+  font-size: 12px;
+  line-height: 17px;
+  color: #000000;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+#post .highlight code {
+  border: none;
+}
+#post p.excerpt {
+  background: #660000;
+  font-style: italic;
+  padding: 12px;
+}
+#post p.tags a {
+  color: #11cc00;
+  font-weight: bolder;
+}
+#post img {
+  box-shadow: 0, 0, 5px, #000000;
+  -moz-box-shadow: 0, 0, 5px, #000000;
+  -webkit-box-shadow: 0, 0, 5px, #000000;
+  max-width: 90%;
+}
+#post em {
+  font-weight: bolder;
+  font-size: 110%;
+}
+#post h3 {
+  margin-top: 14px;
+  border-top: solid #cccccc;
+}
+/***********************   Pagination   *************************************/
+#pagination {
+  border-top: 1px dotted #cccccc;
+  padding-top: 14px;
+}
+#pagination li {
+  float: left;
+  display: block;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+#pagination li a {
+  text-decoration: underline;
+  font-size: 85%;
+}
+#pagination li.last_page {
+  width: 52px;
+}
+#pagination li.current_page {
+  background-color: #111111;
+}
+/*******************************  Other  *********************************/
+#site.messages #post .meta,
+#site.about #post .meta {
+  display: none;
+}

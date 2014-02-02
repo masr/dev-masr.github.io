@@ -1,25 +1,26 @@
 ---
-layout: default
+layout: layout
 title: Masr's Blog
 ---
 
 <div id="home">
-    <h2>Posts</h2>
+    <h2 class="posts_index_title">Posts</h2>
+    {% if site.paginate %}
     <ul class="posts">
-        {% if site.paginate %}
 
         {% for post in paginator.posts %}
         {% include post_item.html %}
         {% endfor %}
         {% assign pager_url = site.url %}
-        {% include pagination.html %}
+    </ul>
+    {% include pagination.html %}
 
-        {% else %}
-
+    {% else %}
+    <ul class="posts">
         {% for post in site.posts %}
         {% include post_item.html %}
         {% endfor %}
-
-        {% endif %}
     </ul>
+
+    {% endif %}
 </div>

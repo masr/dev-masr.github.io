@@ -40,7 +40,7 @@ module Jekyll
       pages = TagPager.calculate_pages(tag_posts, site.config['paginate'].to_i)
 
       (1..pages).each do |num_page|
-        pager = TagPager.new(site.config, num_page, tag_posts, tag, pages)
+        pager = TagPager.new(site, num_page, tag_posts, tag, pages)
 
         if num_page>1
           newpage = TagIndexPage.new(site, site.source, "tag/#{tag}/page#{num_page}", tag)
@@ -68,9 +68,9 @@ module Jekyll
       !config['paginate'].nil?
     end
 
-    def initialize(config, page, all_posts, tag, num_pages = nil)
+    def initialize(site, page, all_posts, tag, num_pages = nil)
       @tag = tag
-      super config, page, all_posts, num_pages
+      super site, page, all_posts, num_pages
     end
 
     alias_method :original_to_liquid, :to_liquid

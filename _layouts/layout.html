@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ site.url }}/views/css/reset.css">
+    <link rel="stylesheet" href="{{ site.url }}/views/css/style.css">
+    <link rel="stylesheet" href="{{ site.url }}/views/css/syntax.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Convergence" />
+    <script type="text/javascript" src="{{ site.url }}/views/js/jquery-1.7.2.js"></script>
+</head>
+<body>
+
+<div id="container">
+    <div id="site" class="{{ page.type }} {{ page.type2 }}">
+        <div id="header" class="fix_height">
+            <div class="panel1">
+                <img src="{{ site.url }}/views/img/cartoon_guitar.gif"/>
+            </div>
+            <div class="panel2">
+                {% include header_categories.html %}
+                <h1><a href="{{ site.url }}/">{{ site.name }}</a></h1>
+
+                <div class="sub">What a lovely world...</div>
+            </div>
+        </div>
+        <div id="content">
+            {{ content }}
+        </div>
+        <div id="widgets" class="fix_height">
+            {% include widget_recent_comments.html %}
+            {% include widget_tagcloud.html %}
+        </div>
+
+        <div id="footer">
+            <table>
+                <tr>
+                    <td class="masr_home">Masr's Home</td>
+                    <td><a target="_blank" href="http://www.masr.in">www.masr.in</a></td>
+                </tr>
+                <tr>
+                    <td>I'm on Github</td>
+                    <td><a target="_blank" href="http://github.com/masr/">github.com/masr</a></td>
+                </tr>
+                <tr>
+                    <td>Contact me</td>
+                    <td><a href="mailto:eric@masr.in?subject=Say Hello To Masr &body=Please share anything you like!">eric@masr.in</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- /container -->
+<script type="text/javascript" src="{{ site.url }}/views/js/main.js"></script>
+</body>
+</html>
