@@ -35,7 +35,7 @@ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License
 (at http://www.gnu.org/licences/lgpl.html) for more details.
 */
 
-var mathcolor = "black";        // change it to "" (to inherit) or another color
+var mathcolor = "";        // change it to "" (to inherit) or another color
 var mathfontsize = "1em";      // change to e.g. 1.2em for larger math
 var mathfontfamily = "serif";  // change to "" to inherit (works in IE) 
                                // or another family (e.g. "arial")
@@ -52,7 +52,7 @@ var avoidinnerHTML = false;   // set true if assigning to innerHTML gives error
 var displaystyle = true;      // puts limits above and below large operators
 var showasciiformulaonhover = true; // helps students learn ASCIIMath
 var decimalsign = ".";        // change to "," if you like, beware of `(1,2)`!
-var AMdelimiter1 = "`", AMescape1 = "\\\\`"; // can use other characters
+var AMdelimiter1 = "~", AMescape1 = "\\\\~"; // can use other characters
 var AMdocumentId = "wikitext" // PmWiki element containing math (default=body)
 var checkforprocessasciimathinmoodle = false; // true for systems like Moodle
 var dsvglocation = ""; // path to d.svg (blank if same as ASCIIMathML.js loc)
